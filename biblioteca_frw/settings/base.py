@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
-#SECRET_KEY = 'django-insecure-b61p(ex9e2w*xz9&p($s$-p0$frfsnxq=8(hz8dq6@2o(-cln='
+# SECRET_KEY = 'django-insecure-b61p(ex9e2w*xz9&p($s$-p0$frfsnxq=8(hz8dq6@2o(-cln='
 
 
 # Application definition
@@ -28,11 +28,12 @@ DJANGO_APPS = [
 LOCAL_APPS = [
     'apps.editorial',
     'apps.libro',
+    'apps.users',
 ]
 
 THIRD_APPS = [
     'rest_framework',
-    'drf_yasg',
+    'drf_yasg',    
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_APPS
